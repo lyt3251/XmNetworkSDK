@@ -12,6 +12,9 @@
 		ED8FB5391EDFC23D00910CCC /* TXHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8FB5371EDFC23D00910CCC /* TXHttpClient.h */; };
 		ED8FB53A1EDFC23D00910CCC /* TXHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FB5381EDFC23D00910CCC /* TXHttpClient.m */; };
 		ED8FB53C1EDFC28400910CCC /* XMDef.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8FB53B1EDFC28400910CCC /* XMDef.h */; };
+		ED8FB53F1EDFF14B00910CCC /* XMTestRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8FB53D1EDFF14B00910CCC /* XMTestRequestManager.h */; };
+		ED8FB5401EDFF14B00910CCC /* XMTestRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FB53E1EDFF14B00910CCC /* XMTestRequestManager.m */; };
+		ED8FB5421EDFFD8800910CCC /* XMTestRequestManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FB5411EDFFD8800910CCC /* XMTestRequestManagerTests.m */; };
 		ED9B31361EDFBA9600CB49EF /* XmNetworkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9B312C1EDFBA9500CB49EF /* XmNetworkSDK.framework */; };
 		ED9B313B1EDFBA9600CB49EF /* XmNetworkSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B313A1EDFBA9600CB49EF /* XmNetworkSDKTests.m */; };
 		ED9B313D1EDFBA9600CB49EF /* XmNetworkSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9B312F1EDFBA9500CB49EF /* XmNetworkSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +44,9 @@
 		ED8FB5371EDFC23D00910CCC /* TXHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXHttpClient.h; sourceTree = "<group>"; };
 		ED8FB5381EDFC23D00910CCC /* TXHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXHttpClient.m; sourceTree = "<group>"; };
 		ED8FB53B1EDFC28400910CCC /* XMDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMDef.h; sourceTree = "<group>"; };
+		ED8FB53D1EDFF14B00910CCC /* XMTestRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTestRequestManager.h; sourceTree = "<group>"; };
+		ED8FB53E1EDFF14B00910CCC /* XMTestRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTestRequestManager.m; sourceTree = "<group>"; };
+		ED8FB5411EDFFD8800910CCC /* XMTestRequestManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTestRequestManagerTests.m; sourceTree = "<group>"; };
 		ED9B312C1EDFBA9500CB49EF /* XmNetworkSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XmNetworkSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9B312F1EDFBA9500CB49EF /* XmNetworkSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XmNetworkSDK.h; sourceTree = "<group>"; };
 		ED9B31301EDFBA9500CB49EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +105,8 @@
 			children = (
 				ED8FB5371EDFC23D00910CCC /* TXHttpClient.h */,
 				ED8FB5381EDFC23D00910CCC /* TXHttpClient.m */,
+				ED8FB53D1EDFF14B00910CCC /* XMTestRequestManager.h */,
+				ED8FB53E1EDFF14B00910CCC /* XMTestRequestManager.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -140,6 +148,7 @@
 			children = (
 				ED9B313A1EDFBA9600CB49EF /* XmNetworkSDKTests.m */,
 				ED9B313C1EDFBA9600CB49EF /* Info.plist */,
+				ED8FB5411EDFFD8800910CCC /* XMTestRequestManagerTests.m */,
 			);
 			path = XmNetworkSDKTests;
 			sourceTree = "<group>";
@@ -166,6 +175,7 @@
 				ED9B313D1EDFBA9600CB49EF /* XmNetworkSDK.h in Headers */,
 				ED9B31521EDFBF0100CB49EF /* Message.pbobjc.h in Headers */,
 				ED9B31541EDFBF0100CB49EF /* Xm.pbobjc.h in Headers */,
+				ED8FB53F1EDFF14B00910CCC /* XMTestRequestManager.h in Headers */,
 				ED8FB5391EDFC23D00910CCC /* TXHttpClient.h in Headers */,
 				ED8FB53C1EDFC28400910CCC /* XMDef.h in Headers */,
 			);
@@ -354,6 +364,7 @@
 			files = (
 				ED9B31531EDFBF0100CB49EF /* Message.pbobjc.m in Sources */,
 				ED8FB53A1EDFC23D00910CCC /* TXHttpClient.m in Sources */,
+				ED8FB5401EDFF14B00910CCC /* XMTestRequestManager.m in Sources */,
 				ED9B31551EDFBF0100CB49EF /* Xm.pbobjc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8FB5421EDFFD8800910CCC /* XMTestRequestManagerTests.m in Sources */,
 				ED9B313B1EDFBA9600CB49EF /* XmNetworkSDKTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

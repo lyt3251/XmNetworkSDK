@@ -43,20 +43,20 @@ static GPBFileDescriptor *XMTestXmRoot_FileDescriptor(void) {
   return descriptor;
 }
 
-#pragma mark - XMTestTestRequest
+#pragma mark - XMTestRequest
 
-@implementation XMTestTestRequest
+@implementation XMTestRequest
 
 @dynamic requestid;
 @dynamic index;
 @dynamic URL;
 
-typedef struct XMTestTestRequest__storage_ {
+typedef struct XMTestRequest__storage_ {
   uint32_t _has_storage_[1];
   int32_t index;
   NSString *requestid;
   NSString *URL;
-} XMTestTestRequest__storage_;
+} XMTestRequest__storage_;
 
 // This method is threadsafe because it is initially called
 // in +initialize for each subclass.
@@ -67,38 +67,38 @@ typedef struct XMTestTestRequest__storage_ {
       {
         .name = "requestid",
         .dataTypeSpecific.className = NULL,
-        .number = XMTestTestRequest_FieldNumber_Requestid,
+        .number = XMTestRequest_FieldNumber_Requestid,
         .hasIndex = 0,
-        .offset = (uint32_t)offsetof(XMTestTestRequest__storage_, requestid),
+        .offset = (uint32_t)offsetof(XMTestRequest__storage_, requestid),
         .flags = GPBFieldOptional,
         .dataType = GPBDataTypeString,
       },
       {
         .name = "index",
         .dataTypeSpecific.className = NULL,
-        .number = XMTestTestRequest_FieldNumber_Index,
+        .number = XMTestRequest_FieldNumber_Index,
         .hasIndex = 1,
-        .offset = (uint32_t)offsetof(XMTestTestRequest__storage_, index),
+        .offset = (uint32_t)offsetof(XMTestRequest__storage_, index),
         .flags = GPBFieldOptional,
         .dataType = GPBDataTypeInt32,
       },
       {
         .name = "URL",
         .dataTypeSpecific.className = NULL,
-        .number = XMTestTestRequest_FieldNumber_URL,
+        .number = XMTestRequest_FieldNumber_URL,
         .hasIndex = 2,
-        .offset = (uint32_t)offsetof(XMTestTestRequest__storage_, URL),
+        .offset = (uint32_t)offsetof(XMTestRequest__storage_, URL),
         .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldTextFormatNameCustom),
         .dataType = GPBDataTypeString,
       },
     };
     GPBDescriptor *localDescriptor =
-        [GPBDescriptor allocDescriptorForClass:[XMTestTestRequest class]
+        [GPBDescriptor allocDescriptorForClass:[XMTestRequest class]
                                      rootClass:[XMTestXmRoot class]
                                           file:XMTestXmRoot_FileDescriptor()
                                         fields:fields
                                     fieldCount:(uint32_t)(sizeof(fields) / sizeof(GPBMessageFieldDescription))
-                                   storageSize:sizeof(XMTestTestRequest__storage_)
+                                   storageSize:sizeof(XMTestRequest__storage_)
                                          flags:GPBDescriptorInitializationFlag_None];
 #if !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
     static const char *extraTextFormatInfo =
@@ -113,20 +113,20 @@ typedef struct XMTestTestRequest__storage_ {
 
 @end
 
-#pragma mark - XMTestTestResponse
+#pragma mark - XMTestResponse
 
-@implementation XMTestTestResponse
+@implementation XMTestResponse
 
 @dynamic errorMsg;
 @dynamic errorCode;
 @dynamic listArray, listArray_Count;
 
-typedef struct XMTestTestResponse__storage_ {
+typedef struct XMTestResponse__storage_ {
   uint32_t _has_storage_[1];
   NSString *errorMsg;
   NSMutableArray *listArray;
   int64_t errorCode;
-} XMTestTestResponse__storage_;
+} XMTestResponse__storage_;
 
 // This method is threadsafe because it is initially called
 // in +initialize for each subclass.
@@ -137,38 +137,38 @@ typedef struct XMTestTestResponse__storage_ {
       {
         .name = "errorMsg",
         .dataTypeSpecific.className = NULL,
-        .number = XMTestTestResponse_FieldNumber_ErrorMsg,
+        .number = XMTestResponse_FieldNumber_ErrorMsg,
         .hasIndex = 0,
-        .offset = (uint32_t)offsetof(XMTestTestResponse__storage_, errorMsg),
+        .offset = (uint32_t)offsetof(XMTestResponse__storage_, errorMsg),
         .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldTextFormatNameCustom),
         .dataType = GPBDataTypeString,
       },
       {
         .name = "errorCode",
         .dataTypeSpecific.className = NULL,
-        .number = XMTestTestResponse_FieldNumber_ErrorCode,
+        .number = XMTestResponse_FieldNumber_ErrorCode,
         .hasIndex = 1,
-        .offset = (uint32_t)offsetof(XMTestTestResponse__storage_, errorCode),
+        .offset = (uint32_t)offsetof(XMTestResponse__storage_, errorCode),
         .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldTextFormatNameCustom),
         .dataType = GPBDataTypeInt64,
       },
       {
         .name = "listArray",
         .dataTypeSpecific.className = NULL,
-        .number = XMTestTestResponse_FieldNumber_ListArray,
+        .number = XMTestResponse_FieldNumber_ListArray,
         .hasIndex = GPBNoHasBit,
-        .offset = (uint32_t)offsetof(XMTestTestResponse__storage_, listArray),
+        .offset = (uint32_t)offsetof(XMTestResponse__storage_, listArray),
         .flags = GPBFieldRepeated,
         .dataType = GPBDataTypeString,
       },
     };
     GPBDescriptor *localDescriptor =
-        [GPBDescriptor allocDescriptorForClass:[XMTestTestResponse class]
+        [GPBDescriptor allocDescriptorForClass:[XMTestResponse class]
                                      rootClass:[XMTestXmRoot class]
                                           file:XMTestXmRoot_FileDescriptor()
                                         fields:fields
                                     fieldCount:(uint32_t)(sizeof(fields) / sizeof(GPBMessageFieldDescription))
-                                   storageSize:sizeof(XMTestTestResponse__storage_)
+                                   storageSize:sizeof(XMTestResponse__storage_)
                                          flags:GPBDescriptorInitializationFlag_None];
 #if !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
     static const char *extraTextFormatInfo =

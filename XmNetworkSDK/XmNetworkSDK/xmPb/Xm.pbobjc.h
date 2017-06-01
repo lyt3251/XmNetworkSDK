@@ -44,15 +44,15 @@ NS_ASSUME_NONNULL_BEGIN
 @interface XMTestXmRoot : GPBRootObject
 @end
 
-#pragma mark - XMTestTestRequest
+#pragma mark - XMTestRequest
 
-typedef GPB_ENUM(XMTestTestRequest_FieldNumber) {
-  XMTestTestRequest_FieldNumber_Requestid = 1,
-  XMTestTestRequest_FieldNumber_Index = 2,
-  XMTestTestRequest_FieldNumber_URL = 3,
+typedef GPB_ENUM(XMTestRequest_FieldNumber) {
+  XMTestRequest_FieldNumber_Requestid = 1,
+  XMTestRequest_FieldNumber_Index = 2,
+  XMTestRequest_FieldNumber_URL = 3,
 };
 
-@interface XMTestTestRequest : GPBMessage
+@interface XMTestRequest : GPBMessage
 
 @property(nonatomic, readwrite, copy, null_resettable) NSString *requestid;
 
@@ -62,15 +62,15 @@ typedef GPB_ENUM(XMTestTestRequest_FieldNumber) {
 
 @end
 
-#pragma mark - XMTestTestResponse
+#pragma mark - XMTestResponse
 
-typedef GPB_ENUM(XMTestTestResponse_FieldNumber) {
-  XMTestTestResponse_FieldNumber_ErrorMsg = 1,
-  XMTestTestResponse_FieldNumber_ErrorCode = 2,
-  XMTestTestResponse_FieldNumber_ListArray = 3,
+typedef GPB_ENUM(XMTestResponse_FieldNumber) {
+  XMTestResponse_FieldNumber_ErrorMsg = 1,
+  XMTestResponse_FieldNumber_ErrorCode = 2,
+  XMTestResponse_FieldNumber_ListArray = 3,
 };
 
-@interface XMTestTestResponse : GPBMessage
+@interface XMTestResponse : GPBMessage
 
 @property(nonatomic, readwrite, copy, null_resettable) NSString *errorMsg;
 

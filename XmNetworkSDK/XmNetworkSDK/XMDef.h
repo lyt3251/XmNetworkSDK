@@ -77,7 +77,8 @@ _code;                                                  \
 
 #define TX_PARSE_PB_OBJECT(targetClassName, targetObject)                                                              \
 @try {                                                                                                             \
-targetObject = [targetClassName parseFromData:response.body];                                                  \
+NSError *error;                                                                                                     \
+targetObject = [targetClassName parseFromData:response.body  error:&error];                                                  \
 } @catch (NSException *e) {                                                                                        \
 innerError = TX_ERROR_MAKE(TX_STATUS_PB_PARSE_ERROR, e.name);                                                  \
 goto completed;                                                                                                \
