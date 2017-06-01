@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEB1421ABBD85A94DA605B2A /* libPods-XmNetworkSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0B908905A852725E843B0A /* libPods-XmNetworkSDK.a */; };
+		B36854DD2834A06F68A6E374 /* libPods-XmNetworkSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 393E4986B12337D4AF34C53C /* libPods-XmNetworkSDKTests.a */; };
+		ED8FB5391EDFC23D00910CCC /* TXHttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8FB5371EDFC23D00910CCC /* TXHttpClient.h */; };
+		ED8FB53A1EDFC23D00910CCC /* TXHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8FB5381EDFC23D00910CCC /* TXHttpClient.m */; };
+		ED8FB53C1EDFC28400910CCC /* XMDef.h in Headers */ = {isa = PBXBuildFile; fileRef = ED8FB53B1EDFC28400910CCC /* XMDef.h */; };
 		ED9B31361EDFBA9600CB49EF /* XmNetworkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9B312C1EDFBA9500CB49EF /* XmNetworkSDK.framework */; };
 		ED9B313B1EDFBA9600CB49EF /* XmNetworkSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B313A1EDFBA9600CB49EF /* XmNetworkSDKTests.m */; };
 		ED9B313D1EDFBA9600CB49EF /* XmNetworkSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9B312F1EDFBA9500CB49EF /* XmNetworkSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED9B31521EDFBF0100CB49EF /* Message.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9B314B1EDFBF0100CB49EF /* Message.pbobjc.h */; };
+		ED9B31531EDFBF0100CB49EF /* Message.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B314C1EDFBF0100CB49EF /* Message.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ED9B31541EDFBF0100CB49EF /* Xm.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9B314D1EDFBF0100CB49EF /* Xm.pbobjc.h */; };
+		ED9B31551EDFBF0100CB49EF /* Xm.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B314E1EDFBF0100CB49EF /* Xm.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +32,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FAFFA813346E3CBFF463B29 /* Pods-XmNetworkSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XmNetworkSDKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XmNetworkSDKTests/Pods-XmNetworkSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		393E4986B12337D4AF34C53C /* libPods-XmNetworkSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XmNetworkSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA92CC4710E2C150E0E398E5 /* Pods-XmNetworkSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XmNetworkSDKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XmNetworkSDKTests/Pods-XmNetworkSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		C688AF47CCCE986DD5AE13DF /* Pods-XmNetworkSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XmNetworkSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-XmNetworkSDK/Pods-XmNetworkSDK.release.xcconfig"; sourceTree = "<group>"; };
+		C8748900171AE574DD463C56 /* Pods-XmNetworkSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XmNetworkSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XmNetworkSDK/Pods-XmNetworkSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		CF0B908905A852725E843B0A /* libPods-XmNetworkSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XmNetworkSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8FB5371EDFC23D00910CCC /* TXHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXHttpClient.h; sourceTree = "<group>"; };
+		ED8FB5381EDFC23D00910CCC /* TXHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXHttpClient.m; sourceTree = "<group>"; };
+		ED8FB53B1EDFC28400910CCC /* XMDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMDef.h; sourceTree = "<group>"; };
 		ED9B312C1EDFBA9500CB49EF /* XmNetworkSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XmNetworkSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9B312F1EDFBA9500CB49EF /* XmNetworkSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XmNetworkSDK.h; sourceTree = "<group>"; };
 		ED9B31301EDFBA9500CB49EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED9B31351EDFBA9600CB49EF /* XmNetworkSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XmNetworkSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9B313A1EDFBA9600CB49EF /* XmNetworkSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XmNetworkSDKTests.m; sourceTree = "<group>"; };
 		ED9B313C1EDFBA9600CB49EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED9B314B1EDFBF0100CB49EF /* Message.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.pbobjc.h; sourceTree = "<group>"; };
+		ED9B314C1EDFBF0100CB49EF /* Message.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.pbobjc.m; sourceTree = "<group>"; };
+		ED9B314D1EDFBF0100CB49EF /* Xm.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xm.pbobjc.h; sourceTree = "<group>"; };
+		ED9B314E1EDFBF0100CB49EF /* Xm.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Xm.pbobjc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB1421ABBD85A94DA605B2A /* libPods-XmNetworkSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +67,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED9B31361EDFBA9600CB49EF /* XmNetworkSDK.framework in Frameworks */,
+				B36854DD2834A06F68A6E374 /* libPods-XmNetworkSDKTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00C12E62BDE980161F43A89F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF0B908905A852725E843B0A /* libPods-XmNetworkSDK.a */,
+				393E4986B12337D4AF34C53C /* libPods-XmNetworkSDKTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F59991A0C81198C60905172 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8748900171AE574DD463C56 /* Pods-XmNetworkSDK.debug.xcconfig */,
+				C688AF47CCCE986DD5AE13DF /* Pods-XmNetworkSDK.release.xcconfig */,
+				0FAFFA813346E3CBFF463B29 /* Pods-XmNetworkSDKTests.debug.xcconfig */,
+				BA92CC4710E2C150E0E398E5 /* Pods-XmNetworkSDKTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED8FB5361EDFC23D00910CCC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ED8FB5371EDFC23D00910CCC /* TXHttpClient.h */,
+				ED8FB5381EDFC23D00910CCC /* TXHttpClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		ED9B31221EDFBA9500CB49EF = {
 			isa = PBXGroup;
 			children = (
 				ED9B312E1EDFBA9500CB49EF /* XmNetworkSDK */,
 				ED9B31391EDFBA9600CB49EF /* XmNetworkSDKTests */,
 				ED9B312D1EDFBA9500CB49EF /* Products */,
+				1F59991A0C81198C60905172 /* Pods */,
+				00C12E62BDE980161F43A89F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +126,11 @@
 		ED9B312E1EDFBA9500CB49EF /* XmNetworkSDK */ = {
 			isa = PBXGroup;
 			children = (
+				ED8FB5361EDFC23D00910CCC /* Network */,
+				ED9B314A1EDFBF0100CB49EF /* XmPb */,
 				ED9B312F1EDFBA9500CB49EF /* XmNetworkSDK.h */,
 				ED9B31301EDFBA9500CB49EF /* Info.plist */,
+				ED8FB53B1EDFC28400910CCC /* XMDef.h */,
 			);
 			path = XmNetworkSDK;
 			sourceTree = "<group>";
@@ -86,6 +144,18 @@
 			path = XmNetworkSDKTests;
 			sourceTree = "<group>";
 		};
+		ED9B314A1EDFBF0100CB49EF /* XmPb */ = {
+			isa = PBXGroup;
+			children = (
+				ED9B314B1EDFBF0100CB49EF /* Message.pbobjc.h */,
+				ED9B314C1EDFBF0100CB49EF /* Message.pbobjc.m */,
+				ED9B314D1EDFBF0100CB49EF /* Xm.pbobjc.h */,
+				ED9B314E1EDFBF0100CB49EF /* Xm.pbobjc.m */,
+			);
+			name = XmPb;
+			path = xmPb;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED9B313D1EDFBA9600CB49EF /* XmNetworkSDK.h in Headers */,
+				ED9B31521EDFBF0100CB49EF /* Message.pbobjc.h in Headers */,
+				ED9B31541EDFBF0100CB49EF /* Xm.pbobjc.h in Headers */,
+				ED8FB5391EDFC23D00910CCC /* TXHttpClient.h in Headers */,
+				ED8FB53C1EDFC28400910CCC /* XMDef.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,10 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED9B31401EDFBA9600CB49EF /* Build configuration list for PBXNativeTarget "XmNetworkSDK" */;
 			buildPhases = (
+				4693518A09B11ECEA87DB4E9 /* [CP] Check Pods Manifest.lock */,
 				ED9B31271EDFBA9500CB49EF /* Sources */,
 				ED9B31281EDFBA9500CB49EF /* Frameworks */,
 				ED9B31291EDFBA9500CB49EF /* Headers */,
 				ED9B312A1EDFBA9500CB49EF /* Resources */,
+				CF110426B44481C104BD8E00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED9B31431EDFBA9600CB49EF /* Build configuration list for PBXNativeTarget "XmNetworkSDKTests" */;
 			buildPhases = (
+				F830778C283A06198D37EBC9 /* [CP] Check Pods Manifest.lock */,
 				ED9B31311EDFBA9600CB49EF /* Sources */,
 				ED9B31321EDFBA9600CB49EF /* Frameworks */,
 				ED9B31331EDFBA9600CB49EF /* Resources */,
+				998AEA00AB1799AE8931AB0B /* [CP] Embed Pods Frameworks */,
+				3CC158240DF864F18EF5CF3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,11 +269,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CC158240DF864F18EF5CF3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XmNetworkSDKTests/Pods-XmNetworkSDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4693518A09B11ECEA87DB4E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		998AEA00AB1799AE8931AB0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XmNetworkSDKTests/Pods-XmNetworkSDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF110426B44481C104BD8E00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XmNetworkSDK/Pods-XmNetworkSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F830778C283A06198D37EBC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED9B31271EDFBA9500CB49EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED9B31531EDFBF0100CB49EF /* Message.pbobjc.m in Sources */,
+				ED8FB53A1EDFC23D00910CCC /* TXHttpClient.m in Sources */,
+				ED9B31551EDFBF0100CB49EF /* Xm.pbobjc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +477,7 @@
 		};
 		ED9B31411EDFBA9600CB49EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8748900171AE574DD463C56 /* Pods-XmNetworkSDK.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -336,6 +497,7 @@
 		};
 		ED9B31421EDFBA9600CB49EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C688AF47CCCE986DD5AE13DF /* Pods-XmNetworkSDK.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -355,6 +517,7 @@
 		};
 		ED9B31441EDFBA9600CB49EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FAFFA813346E3CBFF463B29 /* Pods-XmNetworkSDKTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = XmNetworkSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -365,6 +528,7 @@
 		};
 		ED9B31451EDFBA9600CB49EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA92CC4710E2C150E0E398E5 /* Pods-XmNetworkSDKTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = XmNetworkSDKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -392,6 +556,7 @@
 				ED9B31421EDFBA9600CB49EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED9B31431EDFBA9600CB49EF /* Build configuration list for PBXNativeTarget "XmNetworkSDKTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +565,7 @@
 				ED9B31451EDFBA9600CB49EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

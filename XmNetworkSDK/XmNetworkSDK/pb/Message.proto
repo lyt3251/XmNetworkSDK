@@ -1,0 +1,19 @@
+syntax = "proto3";
+option objc_class_prefix = "XMBASE";
+option java_package = "com.ucse.xm.base";
+package XMBASE;
+
+message Request {
+     string url = 1;
+     bytes body = 2;
+     string token = 3;
+     string version = 4;
+     string osName = 5;//ios，android
+     string osVersion = 6;
+}
+
+message Response {
+     int32 status = 1;
+     string statusTxt=2;
+     bytes body = 3;
+}

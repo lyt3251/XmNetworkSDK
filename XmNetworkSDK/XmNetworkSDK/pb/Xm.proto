@@ -1,0 +1,19 @@
+syntax = "proto3";
+option objc_class_prefix = "XMTest";
+option java_package = "com.ucse.xm.test";
+package XMTest;
+
+message TestRequest
+{
+  string requestid = 1;
+	int32 index = 2;
+	string url = 3;
+}
+
+
+message TestResponse
+{
+	string errorMsg = 1;
+	int64  errorCode = 2;
+	repeated string list = 3;
+}
