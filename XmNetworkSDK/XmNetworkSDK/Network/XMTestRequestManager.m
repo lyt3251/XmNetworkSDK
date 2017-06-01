@@ -46,5 +46,36 @@
     
 }
 
+-(void)test_Contidionrequest:(NSString *)contryId cityId:(NSString *)cityId onCompleted:(void (^)(NSError *error, NSArray *list))onCompleted
+{
+    
+    XMTestContidionRequest *request = [XMTestContidionRequest message];
+    request.countryId = contryId;
+    request.cityId = cityId;
+    
+    [[TXHttpClient sharedInstance] sendRequest:@"/d.php"
+                                         token:@""
+                                      bodyData:request.data
+                                   onCompleted:^(NSError *error, XMBASEResponse *response) {
+                                       NSError *innerError = nil;
+                                       XMTestResponse *innerResponse;
+                                       
+                                       TX_GO_TO_COMPLETED_IF_ERROR(error);
+                                       TX_PARSE_PB_OBJECT(XMTestResponse, innerResponse);
+                                       
+                                   completed:
+                                       {
+                                           TX_POST_NOTIFICATION_IF_ERROR(innerError);
+                                           TX_RUN_ON_MAIN(
+                                                          if(onCompleted)
+                                                          {
+                                                              onCompleted(innerError, innerResponse.listArray);
+                                                          }
+                                                          );
+                                       }
+                                   }];
+    
+}
+
 
 @end

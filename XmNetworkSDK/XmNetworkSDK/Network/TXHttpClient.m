@@ -29,8 +29,6 @@
     }
     _manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:configuration];
     AFHTTPRequestSerializer *request = [AFHTTPRequestSerializer serializer];
-//    [request setValue:@"text/plain;charset=UTF-8" forKey:@"Content-Type"];
-    [request setValue:@"text/plain;charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
     _manager.requestSerializer = request;
     _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     _manager.completionQueue = dispatch_get_main_queue();
@@ -152,6 +150,7 @@
     [urlRequest setTimeoutInterval:20];
     NSString* encodeResult = [txpbRequest.data base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
     [urlRequest setValue:encodeResult forHTTPHeaderField:@"httpBody"];
+    [urlRequest setValue:@"text/plain;charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
     
 #ifdef TX_SYNC_HTTP_REQUEST
     NSURLResponse *syncResponse;

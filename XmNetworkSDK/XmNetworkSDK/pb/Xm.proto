@@ -3,6 +3,7 @@ option objc_class_prefix = "XMTest";
 option java_package = "com.ucse.xm.test";
 package XMTest;
 
+//url d.php
 message Request
 {
   string requestid = 1;
@@ -17,3 +18,21 @@ message Response
 	int64  errorCode = 2;
 	repeated string list = 3;
 }
+
+
+
+//url d.php
+message ContidionRequest
+{
+	string countryId = 1;
+	string cityId = 2;
+}
+
+message ContidionResponse
+{
+	string errorMsg = 1;
+	int64  errorCode = 2;
+	repeated string list = 3;
+}
+
+

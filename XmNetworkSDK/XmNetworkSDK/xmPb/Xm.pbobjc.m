@@ -183,6 +183,135 @@ typedef struct XMTestResponse__storage_ {
 
 @end
 
+#pragma mark - XMTestContidionRequest
+
+@implementation XMTestContidionRequest
+
+@dynamic countryId;
+@dynamic cityId;
+
+typedef struct XMTestContidionRequest__storage_ {
+  uint32_t _has_storage_[1];
+  NSString *countryId;
+  NSString *cityId;
+} XMTestContidionRequest__storage_;
+
+// This method is threadsafe because it is initially called
+// in +initialize for each subclass.
++ (GPBDescriptor *)descriptor {
+  static GPBDescriptor *descriptor = nil;
+  if (!descriptor) {
+    static GPBMessageFieldDescription fields[] = {
+      {
+        .name = "countryId",
+        .dataTypeSpecific.className = NULL,
+        .number = XMTestContidionRequest_FieldNumber_CountryId,
+        .hasIndex = 0,
+        .offset = (uint32_t)offsetof(XMTestContidionRequest__storage_, countryId),
+        .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldTextFormatNameCustom),
+        .dataType = GPBDataTypeString,
+      },
+      {
+        .name = "cityId",
+        .dataTypeSpecific.className = NULL,
+        .number = XMTestContidionRequest_FieldNumber_CityId,
+        .hasIndex = 1,
+        .offset = (uint32_t)offsetof(XMTestContidionRequest__storage_, cityId),
+        .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldTextFormatNameCustom),
+        .dataType = GPBDataTypeString,
+      },
+    };
+    GPBDescriptor *localDescriptor =
+        [GPBDescriptor allocDescriptorForClass:[XMTestContidionRequest class]
+                                     rootClass:[XMTestXmRoot class]
+                                          file:XMTestXmRoot_FileDescriptor()
+                                        fields:fields
+                                    fieldCount:(uint32_t)(sizeof(fields) / sizeof(GPBMessageFieldDescription))
+                                   storageSize:sizeof(XMTestContidionRequest__storage_)
+                                         flags:GPBDescriptorInitializationFlag_None];
+#if !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
+    static const char *extraTextFormatInfo =
+        "\002\001\t\000\002\006\000";
+    [localDescriptor setupExtraTextInfo:extraTextFormatInfo];
+#endif  // !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
+    NSAssert(descriptor == nil, @"Startup recursed!");
+    descriptor = localDescriptor;
+  }
+  return descriptor;
+}
+
+@end
+
+#pragma mark - XMTestContidionResponse
+
+@implementation XMTestContidionResponse
+
+@dynamic errorMsg;
+@dynamic errorCode;
+@dynamic listArray, listArray_Count;
+
+typedef struct XMTestContidionResponse__storage_ {
+  uint32_t _has_storage_[1];
+  NSString *errorMsg;
+  NSMutableArray *listArray;
+  int64_t errorCode;
+} XMTestContidionResponse__storage_;
+
+// This method is threadsafe because it is initially called
+// in +initialize for each subclass.
++ (GPBDescriptor *)descriptor {
+  static GPBDescriptor *descriptor = nil;
+  if (!descriptor) {
+    static GPBMessageFieldDescription fields[] = {
+      {
+        .name = "errorMsg",
+        .dataTypeSpecific.className = NULL,
+        .number = XMTestContidionResponse_FieldNumber_ErrorMsg,
+        .hasIndex = 0,
+        .offset = (uint32_t)offsetof(XMTestContidionResponse__storage_, errorMsg),
+        .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldTextFormatNameCustom),
+        .dataType = GPBDataTypeString,
+      },
+      {
+        .name = "errorCode",
+        .dataTypeSpecific.className = NULL,
+        .number = XMTestContidionResponse_FieldNumber_ErrorCode,
+        .hasIndex = 1,
+        .offset = (uint32_t)offsetof(XMTestContidionResponse__storage_, errorCode),
+        .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldTextFormatNameCustom),
+        .dataType = GPBDataTypeInt64,
+      },
+      {
+        .name = "listArray",
+        .dataTypeSpecific.className = NULL,
+        .number = XMTestContidionResponse_FieldNumber_ListArray,
+        .hasIndex = GPBNoHasBit,
+        .offset = (uint32_t)offsetof(XMTestContidionResponse__storage_, listArray),
+        .flags = GPBFieldRepeated,
+        .dataType = GPBDataTypeString,
+      },
+    };
+    GPBDescriptor *localDescriptor =
+        [GPBDescriptor allocDescriptorForClass:[XMTestContidionResponse class]
+                                     rootClass:[XMTestXmRoot class]
+                                          file:XMTestXmRoot_FileDescriptor()
+                                        fields:fields
+                                    fieldCount:(uint32_t)(sizeof(fields) / sizeof(GPBMessageFieldDescription))
+                                   storageSize:sizeof(XMTestContidionResponse__storage_)
+                                         flags:GPBDescriptorInitializationFlag_None];
+#if !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
+    static const char *extraTextFormatInfo =
+        "\002\001\010\000\002\t\000";
+    [localDescriptor setupExtraTextInfo:extraTextFormatInfo];
+#endif  // !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
+    NSAssert(descriptor == nil, @"Startup recursed!");
+    descriptor = localDescriptor;
+  }
+  return descriptor;
+}
+
+@end
+
 
 #pragma clang diagnostic pop
 

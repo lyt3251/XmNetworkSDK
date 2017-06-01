@@ -52,6 +52,9 @@ typedef GPB_ENUM(XMTestRequest_FieldNumber) {
   XMTestRequest_FieldNumber_URL = 3,
 };
 
+/**
+ * url d.php
+ **/
 @interface XMTestRequest : GPBMessage
 
 @property(nonatomic, readwrite, copy, null_resettable) NSString *requestid;
@@ -71,6 +74,44 @@ typedef GPB_ENUM(XMTestResponse_FieldNumber) {
 };
 
 @interface XMTestResponse : GPBMessage
+
+@property(nonatomic, readwrite, copy, null_resettable) NSString *errorMsg;
+
+@property(nonatomic, readwrite) int64_t errorCode;
+
+@property(nonatomic, readwrite, strong, null_resettable) NSMutableArray<NSString*> *listArray;
+/** The number of items in @c listArray without causing the array to be created. */
+@property(nonatomic, readonly) NSUInteger listArray_Count;
+
+@end
+
+#pragma mark - XMTestContidionRequest
+
+typedef GPB_ENUM(XMTestContidionRequest_FieldNumber) {
+  XMTestContidionRequest_FieldNumber_CountryId = 1,
+  XMTestContidionRequest_FieldNumber_CityId = 2,
+};
+
+/**
+ * url d.php
+ **/
+@interface XMTestContidionRequest : GPBMessage
+
+@property(nonatomic, readwrite, copy, null_resettable) NSString *countryId;
+
+@property(nonatomic, readwrite, copy, null_resettable) NSString *cityId;
+
+@end
+
+#pragma mark - XMTestContidionResponse
+
+typedef GPB_ENUM(XMTestContidionResponse_FieldNumber) {
+  XMTestContidionResponse_FieldNumber_ErrorMsg = 1,
+  XMTestContidionResponse_FieldNumber_ErrorCode = 2,
+  XMTestContidionResponse_FieldNumber_ListArray = 3,
+};
+
+@interface XMTestContidionResponse : GPBMessage
 
 @property(nonatomic, readwrite, copy, null_resettable) NSString *errorMsg;
 

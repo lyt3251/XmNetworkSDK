@@ -46,6 +46,24 @@
     
 }
 
+- (void)testContidion {
+    // This is an example of a functional test case.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    XCTestExpectation *testException = [self expectationWithDescription:@"testError"];
+    [self.requestManger  test_Contidionrequest:@"1" cityId:@"2" onCompleted:^(NSError *error, NSArray *list) {
+        [testException fulfill];
+        NSLog(@"error:%@, list:%@", error, list);
+    }];
+    
+    //延迟执行
+    [self waitForExpectationsWithTimeout:30 handler:^(NSError *error) {
+        NSLog(@"error:%@", error);
+    }];
+    
+    
+}
+
+
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{

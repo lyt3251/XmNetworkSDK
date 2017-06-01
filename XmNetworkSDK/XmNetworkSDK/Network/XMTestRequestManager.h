@@ -11,4 +11,6 @@
 @interface XMTestRequestManager : NSObject
 -(void)test_request:(NSString *)requestId index:(SInt32)index url:(NSString *)url onCompleted:(void (^)(NSError *error, NSArray *list))onCompleted;
 
+-(void)test_Contidionrequest:(NSString *)contryId cityId:(NSString *)cityId onCompleted:(void (^)(NSError *error, NSArray *list))onCompleted;
+
 @end
