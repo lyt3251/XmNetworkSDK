@@ -30,14 +30,14 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     XCTestExpectation *testException = [self expectationWithDescription:@"testError"];
     
-    [[TXHttpClient sharedInstance] sendRequest:@"a.php" token:nil bodyData:nil onCompleted:^(NSError *error, XMBASEResponse *response) {
-        NSLog(@"error:%@", error);
+    [[TXHttpClient sharedInstance] sendRequest:@"d.php" token:nil bodyData:nil onCompleted:^(NSError *error, XMBASEResponse *response) {
+        NSLog(@"error:%@ response:%@", error, response);
         [testException fulfill];
     }];
     
     //延迟两秒执行
     [self waitForExpectationsWithTimeout:30 handler:^(NSError *error) {
-        XCTFail(@"time out:%@",error);
+        NSLog(@"error:%@", error);
     }];
 }
 
