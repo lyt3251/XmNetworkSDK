@@ -1,6 +1,6 @@
 //
 // Created by lingqingwan on 9/18/15.
-// Copyright (c) 2015 lingiqngwan. All rights reserved.
+// Copyright (c) 2015 lyt. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,6 +16,7 @@
 //主域名为http://api.tx2010.com:80/http_invoke的请求
 - (void)sendRequest:(NSString *)url
               token:(NSString *)token
+          className:(NSString *)className
            bodyData:(NSData *)bodyData
         onCompleted:(void (^)(NSError *error, XMBASEResponse *response))onCompleted;
 
@@ -45,6 +46,7 @@
  */
 - (void)sendRequest:(NSString *)url
               token:(NSString *)token
+          className:(NSString *)className
            bodyData:(NSData *)bodyData
    requestModuleStr:(NSString *)requestModuleStr
         onCompleted:(void (^)(NSError *error, XMBASEResponse *response))onCompleted;

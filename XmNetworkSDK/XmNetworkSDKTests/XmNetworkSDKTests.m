@@ -17,7 +17,7 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
-    [[TXHttpClient sharedInstance] setupHttpProtocolClass:nil];
+    [[TXHttpClient sharedInstance] setupHttpProtocolClass:@"TXCustomURLProtocol"];
 }
 
 - (void)tearDown {
@@ -30,7 +30,7 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     XCTestExpectation *testException = [self expectationWithDescription:@"testError"];
     
-    [[TXHttpClient sharedInstance] sendRequest:@"d.php" token:nil bodyData:nil onCompleted:^(NSError *error, XMBASEResponse *response) {
+    [[TXHttpClient sharedInstance] sendRequest:@"d.php" token:@"" className:@"" bodyData:nil onCompleted:^(NSError *error, XMBASEResponse *response) {
         NSLog(@"error:%@ response:%@", error, response);
         [testException fulfill];
     }];

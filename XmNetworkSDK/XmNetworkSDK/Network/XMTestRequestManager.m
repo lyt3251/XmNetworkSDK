@@ -24,6 +24,7 @@
     
     [[TXHttpClient sharedInstance] sendRequest:@"/d.php"
                                          token:@""
+                                     className:@"XMTestRequest"
                                       bodyData:request.data
                                    onCompleted:^(NSError *error, XMBASEResponse *response) {
                                        NSError *innerError = nil;
@@ -55,6 +56,7 @@
     
     [[TXHttpClient sharedInstance] sendRequest:@"/d.php"
                                          token:@""
+                                      className:@"XMTestContidionRequest"
                                       bodyData:request.data
                                    onCompleted:^(NSError *error, XMBASEResponse *response) {
                                        NSError *innerError = nil;

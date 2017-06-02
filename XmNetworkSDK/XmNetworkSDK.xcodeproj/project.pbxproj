@@ -22,6 +22,12 @@
 		ED9B31531EDFBF0100CB49EF /* Message.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B314C1EDFBF0100CB49EF /* Message.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		ED9B31541EDFBF0100CB49EF /* Xm.pbobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9B314D1EDFBF0100CB49EF /* Xm.pbobjc.h */; };
 		ED9B31551EDFBF0100CB49EF /* Xm.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B314E1EDFBF0100CB49EF /* Xm.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EDCFFCF41EE019D3004D9938 /* TXCustomURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EDCFFCF01EE019D3004D9938 /* TXCustomURLProtocol.h */; };
+		EDCFFCF51EE019D3004D9938 /* TXCustomURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCFFCF11EE019D3004D9938 /* TXCustomURLProtocol.m */; };
+		EDCFFCFA1EE01A10004D9938 /* SystemManger.h in Headers */ = {isa = PBXBuildFile; fileRef = EDCFFCF61EE01A10004D9938 /* SystemManger.h */; };
+		EDCFFCFB1EE01A10004D9938 /* SystemManger.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCFFCF71EE01A10004D9938 /* SystemManger.m */; };
+		EDCFFCFC1EE01A10004D9938 /* TXLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EDCFFCF81EE01A10004D9938 /* TXLogManager.h */; };
+		EDCFFCFD1EE01A10004D9938 /* TXLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCFFCF91EE01A10004D9938 /* TXLogManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,12 @@
 		ED9B314C1EDFBF0100CB49EF /* Message.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.pbobjc.m; sourceTree = "<group>"; };
 		ED9B314D1EDFBF0100CB49EF /* Xm.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xm.pbobjc.h; sourceTree = "<group>"; };
 		ED9B314E1EDFBF0100CB49EF /* Xm.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Xm.pbobjc.m; sourceTree = "<group>"; };
+		EDCFFCF01EE019D3004D9938 /* TXCustomURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXCustomURLProtocol.h; sourceTree = "<group>"; };
+		EDCFFCF11EE019D3004D9938 /* TXCustomURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXCustomURLProtocol.m; sourceTree = "<group>"; };
+		EDCFFCF61EE01A10004D9938 /* SystemManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemManger.h; sourceTree = "<group>"; };
+		EDCFFCF71EE01A10004D9938 /* SystemManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemManger.m; sourceTree = "<group>"; };
+		EDCFFCF81EE01A10004D9938 /* TXLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXLogManager.h; sourceTree = "<group>"; };
+		EDCFFCF91EE01A10004D9938 /* TXLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXLogManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +146,7 @@
 		ED9B312E1EDFBA9500CB49EF /* XmNetworkSDK */ = {
 			isa = PBXGroup;
 			children = (
+				EDCFFCED1EE019D3004D9938 /* HttpLogs */,
 				ED8FB5361EDFC23D00910CCC /* Network */,
 				ED9B314A1EDFBF0100CB49EF /* XmPb */,
 				ED9B312F1EDFBA9500CB49EF /* XmNetworkSDK.h */,
@@ -165,6 +178,19 @@
 			path = xmPb;
 			sourceTree = "<group>";
 		};
+		EDCFFCED1EE019D3004D9938 /* HttpLogs */ = {
+			isa = PBXGroup;
+			children = (
+				EDCFFCF61EE01A10004D9938 /* SystemManger.h */,
+				EDCFFCF71EE01A10004D9938 /* SystemManger.m */,
+				EDCFFCF81EE01A10004D9938 /* TXLogManager.h */,
+				EDCFFCF91EE01A10004D9938 /* TXLogManager.m */,
+				EDCFFCF01EE019D3004D9938 /* TXCustomURLProtocol.h */,
+				EDCFFCF11EE019D3004D9938 /* TXCustomURLProtocol.m */,
+			);
+			path = HttpLogs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -175,9 +201,12 @@
 				ED9B313D1EDFBA9600CB49EF /* XmNetworkSDK.h in Headers */,
 				ED9B31521EDFBF0100CB49EF /* Message.pbobjc.h in Headers */,
 				ED9B31541EDFBF0100CB49EF /* Xm.pbobjc.h in Headers */,
+				EDCFFCFA1EE01A10004D9938 /* SystemManger.h in Headers */,
+				EDCFFCFC1EE01A10004D9938 /* TXLogManager.h in Headers */,
 				ED8FB53F1EDFF14B00910CCC /* XMTestRequestManager.h in Headers */,
 				ED8FB5391EDFC23D00910CCC /* TXHttpClient.h in Headers */,
 				ED8FB53C1EDFC28400910CCC /* XMDef.h in Headers */,
+				EDCFFCF41EE019D3004D9938 /* TXCustomURLProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +391,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCFFCFB1EE01A10004D9938 /* SystemManger.m in Sources */,
 				ED9B31531EDFBF0100CB49EF /* Message.pbobjc.m in Sources */,
+				EDCFFCF51EE019D3004D9938 /* TXCustomURLProtocol.m in Sources */,
+				EDCFFCFD1EE01A10004D9938 /* TXLogManager.m in Sources */,
 				ED8FB53A1EDFC23D00910CCC /* TXHttpClient.m in Sources */,
 				ED8FB5401EDFF14B00910CCC /* XMTestRequestManager.m in Sources */,
 				ED9B31551EDFBF0100CB49EF /* Xm.pbobjc.m in Sources */,

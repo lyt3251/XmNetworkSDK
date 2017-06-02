@@ -9,7 +9,7 @@
 #ifndef XMDef_h
 #define XMDef_h
 #import <Foundation/Foundation.h>
-//#import <CocoaLumberjack.h>
+#import <CocoaLumberjack.h>
 
 #define TX_CHAT_SERVER_ENDPOINT                         @"http://127.0.0.1"
 
@@ -97,6 +97,6 @@ innerError = error;                                                             
 goto completed;                                                                                                \
 }
 
-//static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 
 #endif /* XMDef_h */

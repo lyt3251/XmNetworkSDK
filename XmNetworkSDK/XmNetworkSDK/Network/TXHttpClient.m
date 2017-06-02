@@ -1,6 +1,6 @@
 //
 // Created by lingqingwan on 9/18/15.
-// Copyright (c) 2015 lingiqngwan. All rights reserved.
+// Copyright (c) 2015 lyt. All rights reserved.
 //
 
 #import "TXHttpClient.h"
@@ -123,14 +123,16 @@
 
 - (void)sendRequest:(NSString *)url
               token:(NSString *)token
+          className:(NSString *)className
            bodyData:(NSData *)bodyData
         onCompleted:(void (^)(NSError *error, XMBASEResponse *response))onCompleted {
-    [self sendRequest:url token:token bodyData:bodyData requestModuleStr:@"" onCompleted:onCompleted];
+    [self sendRequest:url token:token className:className bodyData:bodyData requestModuleStr:@"" onCompleted:onCompleted];
 }
 
 
 - (void)sendRequest:(NSString *)url
               token:(NSString *)token
+          className:(NSString *)className
            bodyData:(NSData *)bodyData
          requestModuleStr:(NSString *)requestModuleStr
         onCompleted:(void (^)(NSError *error, XMBASEResponse *response))onCompleted
@@ -142,7 +144,7 @@
     txpbRequest.version = @"1.2.0";
     txpbRequest.osName = @"iOS";
     txpbRequest.osVersion = @"10.10.1";
-    NSString *requestUrl = [NSString stringWithFormat:@"http://127.0.0.1/%@", url];
+    NSString *requestUrl = [NSString stringWithFormat:@"http://127.0.0.1%@", url];
 
     NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[[NSURL alloc] initWithString:requestUrl]];
     [urlRequest setHTTPMethod:@"POST"];
@@ -150,6 +152,10 @@
     [urlRequest setTimeoutInterval:20];
     NSString* encodeResult = [txpbRequest.data base64EncodedStringWithOptions:NSDataBase64EncodingEndLineWithLineFeed];
     [urlRequest setValue:encodeResult forHTTPHeaderField:@"httpBody"];
+    if(className.length > 0)
+    {
+        [urlRequest setValue:className forHTTPHeaderField:@"className"];
+    }
     [urlRequest setValue:@"text/plain;charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
     
 #ifdef TX_SYNC_HTTP_REQUEST
